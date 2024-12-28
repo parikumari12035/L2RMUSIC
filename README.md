@@ -12,10 +12,10 @@
 
 ## <i>🔊ᴄʜᴇᴄᴋ ᴛʜᴇ ᴅᴇᴍᴏ ʀᴏʙᴏᴛ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ💨!</i>
 <i>❣️ᴀʟʟ ᴛʜᴇ ᴄᴜsᴛᴏᴍɪsᴀᴛɪᴏɴs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ. ᴊᴜsᴛ ᴄʜᴇᴄᴋᴏᴜᴛ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴠᴀʀɪᴀʙʟᴇs🦋.</i>
-<p align="center"><a href="https://t.me/CUTE_PARI_AP_BOT"> <img src="https://img.shields.io/badge/CHECK-Demo%20Robot-black?style=for-the-badge&logo=Telegram" width="220" height="39"/></a></p>
+<p align="center"><a href="https://t.me/MentalMusicRobot"> <img src="https://img.shields.io/badge/CHECK-Demo%20Robot-black?style=for-the-badge&logo=Telegram" width="220" height="39"/></a></p>
 
 ## ʀᴇᴘᴏ sᴛᴀᴛs
-<a href="https://github.com/BWFTIME/BWFL2RMUSIC"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Bwftime&repo=BwfChatBot&theme=chartreuse-dark"></a>
+<a href="https://github.com/BWFTIME/BWFL2RMUSIC"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Bwftime&repo=L2RMUSIC&theme=chartreuse-dark"></a>
 
 ### sᴜᴘᴘᴏʀᴛ
 <p align="center"><a href="https://t.me/MUSICBOT_OWNER"> <img src="https://img.shields.io/badge/JOIN-SUPPORT%20GROUP-black?style=for-the-badge&logo=Telegram" width="220" height="38.5"/></a></p>
