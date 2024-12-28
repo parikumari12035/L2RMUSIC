@@ -1,8 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from L2RMUSIC import app
-from L2RMUSIC.utils.errors import capture_err
-import httpx 
+from L2RMUSIC.utils.errors import capture_err 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """
@@ -25,10 +24,10 @@ start_txt = """
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("⛩️𝐀ᴅᴅ ᴍᴜsɪᴄ 𝐁σт⛩️", url=f"https://t.me/MentalMusicRobot?startgroup=true")
+          InlineKeyboardButton("⛩️𝐀ᴅᴅ ᴍᴜsɪᴄ 𝐁σт⛩️", url=f"https://t.me/MentalMusicRobot")
         ],
         [
-          InlineKeyboardButton("𝐑ᴇᴘᴏ", url="https://github.com/BWFTIME/L2RMUSIC"),
+          InlineKeyboardButton("𝐑ᴇᴘᴏ", url="https://github.com/BWFTIME/AshishMusic"),
           InlineKeyboardButton("𝐿2𝙍ꨄ𝐊𝐈𝐍𝐆", url="https://t.me/L2R_KING"),
           ],
                [
@@ -45,4 +44,4 @@ InlineKeyboardButton("[🥀✨➪ 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇⏎】☠︎�
         photo="https://telegra.ph/file/e576aa8308c49d945f433.jpg",
         caption=start_txt,
         reply_markup=reply_markup
-      )
+    )
