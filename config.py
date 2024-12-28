@@ -14,7 +14,7 @@ API_HASH = getenv("API_HASH", "7cb236b197b25c243fa83e7e0173d0e6")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://BWFMUSIC:BWFMUSIC@cluster0.xwnup2l.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 5400))
 
@@ -22,7 +22,7 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "5400")
 )
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002111675614"))
+LOGGER_ID = int(getenv("LOGGER_ID", ""))
 
 # Get this value from @Hot_Girl_Robot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "5820831398"))
@@ -51,8 +51,8 @@ AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", "false")
 AUTO_SUGGESTION_TIME = int(
     getenv("AUTO_SUGGESTION_TIME", "5400"))
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "")
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "bcfe26b0ebc3428882a0b5fb3e872473")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "907c6a054c214005aeae1fd752273cc4")
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
