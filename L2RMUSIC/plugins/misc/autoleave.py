@@ -14,7 +14,7 @@ from pyrogram.enums import ChatType
 
 import config
 from L2RMUSIC import app
-from L2RMUSIC.core.call import Ashish
+from L2RMUSIC.core.call import Ashish as VIP
 from L2RMUSIC.core.call import _clear_ as clean
 from L2RMUSIC.utils.database import (
     get_active_chats,
@@ -27,7 +27,8 @@ from L2RMUSIC.utils.database import (
 LEAVE = True
 async def auto_leave():
     if LEAVE == True:
-        while not await asyncio.sleep(config.AUTO_LEAVE_ASSISTANT_TIME):
+        while not await asyncio.sleep(900):
+                                     
             from VIPMUSIC.core.userbot import assistants
 
             for num in assistants:
