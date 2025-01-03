@@ -15,7 +15,7 @@ from pyrogram.enums import ChatType
 import config
 from L2RMUSIC import app
 from L2RMUSIC.core.call import Ashish
-from L2RMUSIC.core.call import _st_ as clean
+from L2RMUSIC.core.call import _clear_ as clean
 from L2RMUSIC.utils.database import (
     get_active_chats,
     get_assistant,
