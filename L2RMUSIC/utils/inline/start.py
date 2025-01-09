@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from VenomX import app
+from L2RMUSIC import app
 
 
 def start_panel(_):
