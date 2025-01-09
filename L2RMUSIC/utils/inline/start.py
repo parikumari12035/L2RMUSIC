@@ -25,11 +25,11 @@ def private_panel(_):
             )
         ],
         [
-            InlineKeyboardButton(text=_["S_B_10"], user_id=config.OWNER_ID),
-            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHAT),
+            InlineKeyboardButton(text="🔥 ᴏᴡɴᴇʀ 🔥", user_id=config.OWNER_ID),
+            InlineKeyboardButton(text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL),
         ],
         [
-            InlineKeyboardButton(text=_["S_B_4"], callback_data="open_help"),
+            InlineKeyboardButton(text="🔎 ʜᴇʟᴩ 🔎", callback_data="settings_helper"
         ],
     ]
     return buttons
