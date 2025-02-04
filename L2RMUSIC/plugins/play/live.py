@@ -6,38 +6,52 @@ from L2RMUSIC.utils.decorators.language import languageCB
 from L2RMUSIC.utils.stream.stream import stream
 from config import BANNED_USERS
 
-
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
 @languageCB
 async def play_live_stream(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
-    callback_request = callback_data.split(None, 1)[1]
-    vidid, user_id, mode, cplay, fplay = callback_request.split("|")
+    
+    try:
+        callback_request = callback_data.split(None, 1)[1]
+        vidid, user_id, mode, cplay, fplay = callback_request.split("|")
+    except Exception as e:
+        return await CallbackQuery.answer(_["playcb_1"], show_alert=True)
+
     if CallbackQuery.from_user.id != int(user_id):
         try:
             return await CallbackQuery.answer(_["playcb_1"], show_alert=True)
         except:
             return
+    
     try:
         chat_id, channel = await get_channeplayCB(_, cplay, CallbackQuery)
-    except:
+    except Exception as e:
+        # Log the error here for debugging purposes
+        print(f"Error in get_channeplayCB: {str(e)}")
         return
+
     video = True if mode == "v" else None
     user_name = CallbackQuery.from_user.first_name
     await CallbackQuery.message.delete()
+
     try:
         await CallbackQuery.answer()
     except:
         pass
+    
     mystic = await CallbackQuery.message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
+    
     try:
         details, track_id = await YouTube.track(vidid, True)
-    except:
+    except Exception as e:
+        print(f"Error fetching YouTube track: {str(e)}")
         return await mystic.edit_text(_["play_3"])
+
     ffplay = True if fplay == "f" else None
-    if not details["duration_min"]:
+
+    if not details.get("duration_min"):
         try:
             await stream(
                 _,
@@ -57,4 +71,5 @@ async def play_live_stream(client, CallbackQuery, _):
             return await mystic.edit_text(err)
     else:
         return await mystic.edit_text("» ɴᴏᴛ ᴀ ʟɪᴠᴇ sᴛʀᴇᴀᴍ.")
+    
     await mystic.delete()
