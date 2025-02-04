@@ -18,23 +18,22 @@ async def activevc(_, message: Message):
     served_chats = await get_active_chats()
     text = ""
     j = 0
-    for x in served_chats:
+    for chat_id in served_chats:
         try:
-            title = (await app.get_chat(x)).title
-        except:
-            await remove_active_chat(x)
-            continue
-        try:
-            if (await app.get_chat(x)).username:
-                user = (await app.get_chat(x)).username
-                text += f"<b>{j + 1}.</b> <a href=https://t.me/{user}>{unidecode(title).upper()}</a> [<code>{x}</code>]\n"
+            chat = await app.get_chat(chat_id)
+            title = chat.title
+            username = chat.username
+            if username:
+                text += f"<b>{j + 1}.</b> <a href=https://t.me/{username}>{unidecode(title).upper()}</a> [<code>{chat_id}</code>]\n"
             else:
-                text += (
-                    f"<b>{j + 1}.</b> {unidecode(title).upper()} [<code>{x}</code>]\n"
-                )
+                text += f"<b>{j + 1}.</b> {unidecode(title).upper()} [<code>{chat_id}</code>]\n"
             j += 1
-        except:
+        except Exception as e:
+            # Log the error for debugging
+            print(f"Error processing chat {chat_id}: {e}")
+            await remove_active_chat(chat_id)
             continue
+    
     if not text:
         await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
     else:
@@ -50,23 +49,22 @@ async def activevi_(_, message: Message):
     served_chats = await get_active_video_chats()
     text = ""
     j = 0
-    for x in served_chats:
+    for chat_id in served_chats:
         try:
-            title = (await app.get_chat(x)).title
-        except:
-            await remove_active_video_chat(x)
-            continue
-        try:
-            if (await app.get_chat(x)).username:
-                user = (await app.get_chat(x)).username
-                text += f"<b>{j + 1}.</b> <a href=https://t.me/{user}>{unidecode(title).upper()}</a> [<code>{x}</code>]\n"
+            chat = await app.get_chat(chat_id)
+            title = chat.title
+            username = chat.username
+            if username:
+                text += f"<b>{j + 1}.</b> <a href=https://t.me/{username}>{unidecode(title).upper()}</a> [<code>{chat_id}</code>]\n"
             else:
-                text += (
-                    f"<b>{j + 1}.</b> {unidecode(title).upper()} [<code>{x}</code>]\n"
-                )
+                text += f"<b>{j + 1}.</b> {unidecode(title).upper()} [<code>{chat_id}</code>]\n"
             j += 1
-        except:
+        except Exception as e:
+            # Log the error for debugging
+            print(f"Error processing chat {chat_id}: {e}")
+            await remove_active_video_chat(chat_id)
             continue
+
     if not text:
         await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
     else:
