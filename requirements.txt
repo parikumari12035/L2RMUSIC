@@ -1,3 +1,4 @@
+async-lru
 aiofiles
 aiohttp
 asyncio
@@ -7,15 +8,15 @@ ffmpeg-python
 gitpython
 hachoir
 heroku3
-httpx[http2]==0.25.2
+httpx[http2]
 lyricsgenius
 motor
 numpy
-pillow
+pillow==9.5.0
 psutil
-py-tgcalls==0.9.7
 pykeyboard
-pyrogram==2.0.106
+py-tgcalls==2.0.6
+ntgcalls==1.2.3
 python-dotenv
 pyyaml
 speedtest-cli
@@ -29,3 +30,6 @@ youtube-search-python
 wget
 pornhub-api==0.3.0
 telegraph
+git+https://github.com/yt-dlp/yt-dlp.git@master
+py-yt-search>=0.2
+pyrogram
