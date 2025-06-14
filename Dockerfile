@@ -5,10 +5,9 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN python -m pip install --upgrade yt-dlp
-
 COPY . /app/
 WORKDIR /app/
-RUN pip3 install --no-cache-dir -U -r requirements.txt
+RUN python3 -m pip install --upgrade pip setuptools
+RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
-CMD bash pip install --upgrade pyrogram
+CMD python3 -m L2RMUSIC
