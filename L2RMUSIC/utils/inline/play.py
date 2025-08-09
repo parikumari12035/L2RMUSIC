@@ -14,7 +14,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
-            )
+            ),
         ],
         [
             InlineKeyboardButton(
@@ -22,13 +22,13 @@ def track_markup(_, videoid, user_id, channel, fplay):
             ),
             InlineKeyboardButton(
                 text="🪫 sᴜᴩᴩᴏʀᴛ 🪫", url=SUPPORT_CHAT,
-            )
+            ),
         ],
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
-            )
+            ),
         ],
     ]
     return buttons
@@ -60,7 +60,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
-            )
+            ),
         ],
         [
             InlineKeyboardButton(
@@ -68,7 +68,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="", url=SUPPORT_CHAT,
-            )
+            ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
@@ -90,7 +90,7 @@ def stream_markup(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="", url=SUPPORT_CHAT,
-            )
+            ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
