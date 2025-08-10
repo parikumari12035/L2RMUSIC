@@ -16,6 +16,8 @@ API_HASH = getenv("API_HASH", "7cb236b197b25c243fa83e7e0173d0e6")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 
+BOT_USERNAME = getenv("BOT_USERNAME","MentalMusicRobot")
+
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
 # Get your MongoDB URI from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
