@@ -1,7 +1,6 @@
 import time
 import requests
 from L2RMUSIC import app
-from config import BOT_USERNAME
 from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 
