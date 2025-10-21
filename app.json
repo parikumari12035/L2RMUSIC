@@ -23,7 +23,7 @@
         "required": true
       },
       "API_KEY": {
-        "description": "Get this value from https://panel.thequickearn.xyz/signup?ref=NGBM6HYNQKU",
+        "description": "Get this value from Web https://panel.thequickearn.xyz/signup?ref=NGBM6HYNQKU",
         "value": "",
         "required": true
       },   
