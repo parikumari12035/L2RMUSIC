@@ -26,11 +26,11 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "5400"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "5400"))
 
 # Chat ID of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002958659036"))
 
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
 # Get this value from @L2R_KING on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "5820831398"))
+OWNER_ID = int(getenv("OWNER_ID", "7663073502"))
 
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
 # Fill these variables if you're deploying on Heroku.
