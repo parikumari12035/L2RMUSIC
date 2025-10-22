@@ -46,11 +46,11 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)  # Fill this variable if your upstream rep
 
 API_URL = getenv("API_URL", 'https://api.thequickearn.xyz')
 VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
-API_KEY = getenv("API_KEY", None) # youtube song api key, generate free key or buy paid plan from https://panel.thequickearn.xyz/signup?ref=NGBM6HYNQKU
+API_KEY = getenv("API_KEY", 'NxGBNexGenBotsa02f5a') # youtube song api key, generate free key or buy paid plan from https://panel.thequickearn.xyz/signup?ref=NGBM6HYNQKU
 
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ALL_QUIZ_TAME")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BWF_MUSIC1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ganaasupport")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ganaasupport")
 
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
 # Set this to True if you want the assistant to automatically leave chats after an interval
