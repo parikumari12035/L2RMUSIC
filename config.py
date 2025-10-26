@@ -40,7 +40,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/hbbb02219-hue/L2RMUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/parikumari12035/L2RMUSIC")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)  # Fill this variable if your upstream repository is private
 
@@ -49,8 +49,8 @@ VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
 API_KEY = getenv("API_KEY", 'NxGBNexGenBotsa02f5a') # youtube song api key, generate free key or buy paid plan from https://panel.thequickearn.xyz/signup?ref=NGBM6HYNQKU
 
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ganaasupport")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ganaasupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THE_SHONA_SUPPORT")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+5hdg36Lda6QzM2M9")
 
 # ━━━━━━━━━━━━━❖ ➥ 𝐿2𝙍 𝗠𝗨𝗦𝗜𝗖™🇮🇳━━━━━━━━━━━
 # Set this to True if you want the assistant to automatically leave chats after an interval
@@ -95,7 +95,7 @@ userstats = {}
 clean = {}
 
 # Default images and URLs
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/e576aa8308c49d945f433.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/7nzwqw.jpg")
 PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/e576aa8308c49d945f433.jpg")
 PLAYLIST_IMG_URL = "https://telegra.ph/file/e576aa8308c49d945f433.jpg"
 STATS_IMG_URL = "https://telegra.ph/file/e576aa8308c49d945f433.jpg"
